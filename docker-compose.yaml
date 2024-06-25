@@ -5,7 +5,7 @@ networks:
     name: expense
 volumes:
   mysql:
-    external: true
+    external: true # if true, you need to create manually
      # docker volume create mysql
 services:
   mysql:
