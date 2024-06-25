@@ -1,0 +1,13 @@
+name: expense
+networks:
+  default:
+    name: expense
+services:
+  mysql:
+    image: mysql:v1.0.0
+    container_name: mysql # --name mysql
+  backend:
+    image: backend:v1.0.0
+    container_name: backend
+    depends on: mysql
+    
