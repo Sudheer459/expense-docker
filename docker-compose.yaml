@@ -9,12 +9,12 @@ services:
   backend:
     image: backend:v1.0.0
     container_name: backend
-    depends on: 
+    depends_on: 
     - mysql
   frontend:
     image: frontend:v1.0.0
     container_name: frontend
-    depends on:
+    depends_on:
     - backend
     ports:
     - "80:80"
